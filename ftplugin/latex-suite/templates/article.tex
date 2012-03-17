@@ -1,0 +1,156 @@
+% \dddddddd
+% \DDDDDDDD
+\documentclass[11pt,a4paper]{article}
+% \documentclass[11pt,a4paper]{report}
+% \documentclass[11pt,a4paper]{book}
+ 
+% 设置页面
+%==================================================
+\linespread{1}                         %行距
+% \usepackage<a id="goTop" class="button js-link">顶端</a>{geometry}
+% \headsep=2cm
+% \textwidth=16cm \textheight=24.2cm
+%==================================================
+ 
+% 使用中文xeCJK宏包
+%==================================================
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[fallback,slantfont,boldfont,CJKnumber]{xeCJK}
+%==================================================
+ 
+% 其它需要使用的宏包
+%==================================================
+\usepackage{tabularx}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=red,citecolor=blue]{hyperref}
+\usepackage{algorithm}                 %算法排版
+\usepackage{amsmath}                   %数学符号与公式
+\usepackage{amsfonts}                  %数学符号与字体
+\usepackage{graphics}
+\usepackage{color}
+\usepackage{fancyhdr}                  %设置页眉页脚
+\usepackage{fancyvrb}                  %抄录环境
+\usepackage{float}                     %管理浮动体
+\usepackage{geometry}                  %定制页面格式
+\usepackage{hyperref}                  %为PDF文档创建超链接
+\usepackage{multicol}                  %多栏排版
+\usepackage{natbib}                    %管理文献引用
+\usepackage{rotating}                  %旋转文字，图形，表格
+\usepackage{subfigure}                 %排版子图形
+\usepackage{titlesec}                  %改变章节标题格式
+\usepackage{moresize}                  %更多字体大小
+\usepackage{anysize}
+\usepackage{indentfirst}               %首段缩进
+\usepackage{booktabs}                  %使用\multicolumn
+\usepackage{multirow}                  %使用\multirow
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+%==================================================
+ 
+% 将默认的英文目录等改为中文，设置图号和公式号与章节对应，缩进大小
+%==================================================
+% \renewcommand{\contentsname}{\LARGE{\bf{目 \quad 录}}}
+% \renewcommand{\abstractname}{\Large{\bf{摘 \quad 要}}}
+% \renewcommand{\appendixname}{\Large{\bf{附 \quad 录}}}
+% \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}      %公式号与章节对应
+% \renewcommand{\figurename}{\normalsize{图 \arabic{section}.\arabic{figure}}}   %改figure为图
+% \makeatletter
+% \renewcommand{\fnum@figure}[1]{\textbf{\figurename~}\hspace{10pt} \sffamily}   %图号与章节对应
+% \makeatother
+\setlength{\parindent}{2em}       %设置缩进为两个大写M的宽度，大约为两个汉字的宽度
+%==================================================
+  % Theorem style
+%\newtheoremstyle{mystyle}{3pt}{3pt}{\kaishu}{0cm}{\heiti}{}{1em}{}
+%\theoremstyle{mystyle}
+ 
+%\newtheorem{definition}{\hspace{2em}定义}[chapter]
+% 如果没有章, 只有节, 把上面的[chapter]改成[section]
+%\newtheorem{theorem}[definition]{\hspace{2em}定理}
+%\newtheorem{axiom}[definition]{\hspace{2em}公理}
+%\newtheorem{lemma}[definition]{\hspace{2em}引理}
+%\newtheorem{proposition}[definition]{\hspace{2em}命题}
+%\newtheorem{corollary}[definition]{\hspace{2em}推论}
+%\newtheorem{remark}{\hspace{2em}注}[chapter] 
+ 
+% 设置页眉页脚
+%==================================================
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+ 
+\pagestyle{headings}
+% \pagestyle{fancy}
+% \lhead{}
+% \chead{}
+% \rhead{}
+% \lfoot{}
+% \cfoot{}
+% \rfoot{}
+%==================================================
+
+% 设置中文字体
+%==================================================
+\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+% \setCJKmainfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}
+\setCJKsansfont{STHeiti}
+% \setCJKsansfont{Adobe Song Std}
+\setCJKmonofont{STFangsong}
+% \setCJKmonofont{Adobe Fangsong Std}
+ 
+\setCJKfamilyfont{zhsong}{STSong}
+% \setCJKfamilyfont{zhsong}{Adobe Song Std}
+\setCJKfamilyfont{zhhei}{STHeiti}
+% \setCJKfamilyfont{zhhei}{Adobe Heiti Std}
+\setCJKfamilyfont{zhfs}{STFangsong}
+% \setCJKfamilyfont{zhfs}{Adobe Song Std}
+\setCJKfamilyfont{zhkai}{STKaiti}
+% \setCJKfamilyfont{zhkai}{Adobe Kaiti Std}
+ 
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+ 
+% ！使用如下命令：{\songti 宋体} 可以临时使用宋体（要加大括号）
+%==================================================
+ 
+% 设置英文字体
+%==================================================
+%\defaultfontfeatures{Scale=MatchLowercase} % 这个参数保证 serif、sans-serif 和 monospace 字体在小写时大小匹配
+%\setmainfont[Mapping=tex-text]{Times New Roman} % 使用 XeTeX 的 text-mapping 方案，正确显示 LaTeX 样式的双引号（`` ''）
+% \setmainfont[Mapping=tex-text]{Palatino Linotype}
+\setsansfont[Mapping=tex-text]{Arial}
+% \setsansfont[Mapping=tex-text]{DejaVu Sans YuanTi}
+\setmonofont{Courier New}
+% \setmonofont{Monaco}
+% \setmonofont{DejaVu Sans YuanTi}
+%==================================================
+ 
+% 题目，作者，日期
+%==================================================
+\title{}
+\author{}
+\date{}
+%==================================================
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 正文
+%==================================================
+\begin{document}
+% \pagenumbering{Roman}          %页码为大写罗马数字
+% \pagenumbering{arabic}         %页码为阿拉伯数字
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%摘要
+\begin{abstract}
+NONE
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\tableofcontents
+%==================================================
+\newpage
+\bibliographystyle{plainnat}
+\setcitestyle{square,aysep={},yysep={;}}
+\bibliography{bib\doctor.bib}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
