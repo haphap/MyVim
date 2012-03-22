@@ -168,6 +168,7 @@ alias   \begin{abstract}
 snippet eqnarray
 alias   \begin{eqnarray}
 	\begin{eqnarray}
+		\label{eq:}
 		${1}
 	\end{eqnarray}
 	${0}
@@ -175,6 +176,7 @@ alias   \begin{eqnarray}
 snippet eqnarray*
 alias   \begin{eqnarray*}
 	\begin{eqnarray*}
+		\label{eq:}
 		${1}
 	\end{eqnarray}
 	${0}
@@ -186,9 +188,18 @@ alias   \begin{appendix}
 	\end{appendix}
 	${0}
 
+snippet align
+alias   \begin{align}
+	\begin{align}
+		\label{eq:}
+		${1}
+	\end{align}
+	${0}
+	
 snippet equation
 alias   \begin{equation}
 	\begin{equation}
+		\label{eq:}
 		${1}
 	\end{equation}
 	${0}
@@ -210,6 +221,7 @@ alias   \begin{document}
 snippet figure
 alias   \begin{figure}
 	\begin{figure}
+		\label{fig:}
 		\begin{center}
 			\includegraphics[${1:width=}]{${2}}
 			\caption{${3}}
@@ -256,6 +268,7 @@ alias   \begin{flushright}
 snippet picture
 alias   \begin{picture}
 	\begin{picture}
+		\label{pic:}
 		${1}
 	\end{picture}
 	${0}
