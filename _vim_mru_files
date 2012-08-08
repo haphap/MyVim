@@ -1,7 +1,33 @@
 # Most recently edited files in Vim (version 3.0)
+/usr/local/Library/Formula/octave.rb
+/usr/local/Library/Formula/cmake.rb
+/usr/local/Library/Formula/fltk.rb
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/temp/export/ahtl_2009.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/export_percent/ahtl_2009.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/export_percent/ahtl_us.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/import_percent/ahtl_us.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/export_percent/ahtl_2006.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/export_percent/ahtl_each.m
 /Volumes/Mac/Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/paper.tex
 /Volumes/Mac/Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/paper.log
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/import_percent/ahtl_2009.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/无分组国家进出口/import_percent/ahtl_total_each.m
+/Volumes/Mac/Users/HAP/.vimrc
+/Volumes/Mac/Users/HAP/Documents/Projects/Carbon
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/temp/export/trans.m
+/private/etc/mentohust.conf
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/temp/import/ahtl_2009.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/temp/import/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/include/annex.tex
+/Volumes/Mac/Users/HAP/Library/Preferences/Aquamacs Emacs/Preferences.el
 /Volumes/Mac/Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/paper.aux
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/annex/backup/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/annex/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/export/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/import/trans_annex.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/import/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Data/Trade Data/import_percent/trans.m
+/Volumes/Mac/Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/README.md
 /private/etc/hosts
 /Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/paper.log
 /Users/HAP/Documents/Projects/Carbon Emission Rate of Chinese Industrial Sectors/paper.tex
@@ -114,7 +140,6 @@
 /Users/HAP/Documents/Projects/Temp/temp.log
 /Users/HAP/.vim/ftplugin/latex-suite/templates/article.log
 /Users/HAP/Library/Application Support/runic games/torchlight/settings.txt
-/private/etc/mentohust.conf
 /Users/HAP/Downloads/31001-fgqi.bat
 /Users/HAP/Downloads/xecjk-template-all-0.05/tex/data/en_preamble.tex
 /Users/HAP/Downloads/xecjk-template-all-0.05/tex/data/appendix.tex
